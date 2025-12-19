@@ -1,0 +1,89 @@
+body {
+    background-image: url("station.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(3px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-wrapper {
+    width: 100%;
+    max-height: 120px;
+    overflow-y: auto;
+    margin-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 80px;
+    margin: 0 0 20px 0;
+    color: #222;
+}
+
+button {
+    border: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s, filter 0.2s;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+#increment-btn {
+    background: #89CFF0;
+    color: #004080;
+}
+
+#save-btn {
+    background: #4CAF50;
+    color: #0d3b0e;
+}
+
+#reset-btn {
+    background: #FF6B6B;
+    color: #4A0000;
+}
+
+#save-el {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px;
+}
